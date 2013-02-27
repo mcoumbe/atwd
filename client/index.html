@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>University Library Browser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Mike Coumbe">
+
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/jquery.loadmask.css" rel="stylesheet">
+        <link href="css/jquery.dataTables.css" rel="stylesheet">
+
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </head>
+
+    <body>
+        <div class="container wrapper">
+            <div class="row wrapper">
+                <div class="span8 offset2" id="content_wrapper">
+                    <div class="row">
+                        <div class="span8 splash_title">
+                            <h2>University Library Catalog Browser</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span8 options">
+                            <div class="well" data-container="bookdetails">
+                                <table>  
+                                    <form class="form-inline" id="course_books_form">
+                                        <tr><td>
+                                                <label class="control-label" for="coursecode_select">Select Course: </label>
+                                            </td>
+                                            <td>
+                                                <select id="coursecode_select">
+                                                    <option>Please Select Your Course</option>
+                                                    <option value="CC100">COMPUTING BSC FT/SW PROGRAMMES</option>
+                                                    <option value="CC120">COMPUTING HND FT/SWPROGRAMME</option>
+                                                    <option value="CC123">INFORMATION SYSTEMS HND FT/SW PROGRAMME</option>
+                                                    <option value="CC125">DIGITAL MULTIMEDIA HND FT/SW PROGRAMME</option>
+                                                    <option value="CC130">COMPUTING MENG PROGRAMME</option>
+                                                    <option value="CC140">COMPUTING TOP UP DEGREE PROGRAMME</option>
+                                                    <option value="CC145">BUSINESS INFORMATION SYSTEMS TOP UP DEGREE PROGRAMME</option>
+                                                    <option value="CC147">DIGITAL MEDIA TOP UP DEGREE PROGRAMME</option>
+                                                    <option value="CC150">INFORMATION SYSTEMS BA FT/SW PROGRAMME</option>
+                                                    <option value="CC152">DIGITAL MEDIA BA FT/SW PROGRAMME</option>
+                                                    <option value="CC155">COMPUTING SOFTWARE DEVELOPMENT BSC FT/SW PROGRAMME</option>
+                                                    <option value="CC157">INFORMATION SYSTEMS BSC FT/SW PROGRAMME</option>
+                                                    <option value="CC160">COMPUTING INTERNET SYSTEMS DEVELOPMENT BSC FT/SW PROGRAMME</option>
+                                                    <option value="CC161">COMPUTING FOUNDATION DEGREE PROGRAMME</option>
+                                                    <option value="CC163">INFORMATION SYSTEMS FOUNDATION DEGREE PROGRAMME</option>
+                                                    <option value="CC167">DIGITAL MEDIA COMPUTER GAMES TECHNOLOGY FOUNDATION DEGREE PROGRAMME</option>
+                                                    <option value="CC172">DIGITAL MEDIA COMPUTER GAMES DESIGN BA FT/SW PROGRAMME</option>
+                                                    <option value="CC200">COMPUTING HNC/HND PT PROGRAMME</option>
+                                                    <option value="CC203">HNC/HND BUSINESS COMPUTING &amp; INFORMATION SYSTEMS PATHWAYS</option>
+                                                    <option value="CC205">DIGITAL MEDIA HNC/HND PT PROGRAMME</option>
+                                                    <option value="CC210">COMPUTING BSC PT PROGRAMME</option>
+                                                    <option value="CC215">INFORMATION SYSTEMS PT TOP UP DEGREE PROGRAMME</option>
+                                                    <option value="CC230">UNIVERSITY CERTIFICATE IN COMPUTING</option>
+                                                    <option value="CC240">COMPUTING PROFESSIONAL STUDIES BSC PROGRAMME</option>
+                                                    <option value="CC300">COMPUTING MSC FT PROGRAMME</option>
+                                                    <option value="CC310">INFORMATION SYSTEMS MSC FT PROGRAMMES</option>
+                                                    <option value="CC400">COMPUTING MSC PT PROGRAMME</option>
+                                                    <option value="CC420">INFORMATION SYSTEMS MSC/MA PROGRAMMES</option>
+                                                    <option value="CC620">COMPUTING WOMEN INTO TECHNOLOGY &amp; SCIENCE PROGRAMME</option>
+                                                    <option value="CX290">ASSOCIATE STUDENT</option>
+                                                    <option value="CX390">RESEARCH WRITING UP PERIOD</option>
+                                                    <option value="CX500">RESEARCH COMPUTING FT</option>
+                                                    <option value="CX510">RESEARCH MATHS FT</option>
+                                                    <option value="CX700">EUROPEAN EXCHANGE STUDENTS</option>
+                                                    <option value="CX910">BSC COMPUTING (SOFTWARE DEVELOPMENT) (KIIT)</option>
+                                                    <option value="CY100">FOUNDATION DEGREE IN MULTIMEDIA</option>
+                                                    <option value="CY160">BA (HONS) DIGITAL FILM &amp; VISUAL EFFECTS PRODUCTION</option>
+                                                    <option value="CZ120">FOUNDATION DEGREES INFORMATION TECHNOLOGY</option>
+                                                    <option value="CZ130">BSC (HONS) BUSINESS COMPUTING (MULTIMEDIA)</option>
+                                                    <option value="CZ140">BSC(HONS) ICT</option>
+                                                    <option value="CZ200">HNC COMPUTING</option>
+                                                    <option value="CZ220">BSC (HONS) COMPUTING (MULTIMEDIA)</option>
+                                                </select>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-info pull-right span3">Get Course Books</button>
+                                            </td>
+                                        </tr>
+                                    </form>
+                                    <form class="form-inline" id="book_details_form">
+                                        <tr>
+                                            <td>
+                                                <label for="book_id">Book ID: </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="book_id" placeholder="Book ID" />
+                                            </td>
+                                            <td>
+                                                <button class="btn pull-right" type="submit">Find Book</button>
+                                            </td>
+                                        </tr>
+                                    </form>                                
+                                </table>
+                                <h4>Results</h4>
+                                <div id="results">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span8" id="footer">
+                            <hr />
+                            2013 | Mike Coumbe
+                        </div>
+                    </div>
+                </div>
+                <div class="span2 right_column">
+                </div>
+            </div>
+        </div> <!-- /container -->
+        
+        <div id="modal">
+            <table id="suggestions"></table>
+        </div>
+
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.loadmask.min.js"></script>
+        <script src="js/jquery.simplemodal.1.4.4.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/book.js"></script>
+        <script src="js/components.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/application.js"></script>
+    </body>
+</html>
+
