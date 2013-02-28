@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<course_index>
+<description>This file provides an ID mapping for the academic courses at the University of Huddersfield. The school attribute maps to the schools.xml file.  For mappings to relevant UCAS codes, see the ucas.xml file.</description>
+<licence>
+<type>CC0 / Open Data Commons</type>
+<statement>To the extent possible under law, Computing and Library Services, University of Huddersfield, UK has waived all copyright, moral rights, database rights, and any other rights that might be asserted over the data contained within this file.</statement>
+<url>http://labs.creativecommons.org/licenses/zero/1.0</url>
+<url>http://wiki.creativecommons.org/CC0</url>
+<url>http://www.opendatacommons.org</url>
+</licence>
+<courses>
+<course id="CC100" school="C">COMPUTING BSC FT/SW PROGRAMMES</course>
+<course id="CC120" school="C">COMPUTING HND FT/SWPROGRAMME</course>
+<course id="CC123" school="C">INFORMATION SYSTEMS HND FT/SW PROGRAMME</course>
+<course id="CC125" school="C">DIGITAL MULTIMEDIA HND FT/SW PROGRAMME</course>
+<course id="CC130" school="C">COMPUTING MENG PROGRAMME</course>
+<course id="CC140" school="C">COMPUTING TOP UP DEGREE PROGRAMME</course>
+<course id="CC145" school="C">BUSINESS INFORMATION SYSTEMS TOP UP DEGREE PROGRAMME</course>
+<course id="CC147" school="C">DIGITAL MEDIA TOP UP DEGREE PROGRAMME</course>
+<course id="CC150" school="C">INFORMATION SYSTEMS BA FT/SW PROGRAMME</course>
+<course id="CC152" school="C">DIGITAL MEDIA BA FT/SW PROGRAMME</course>
+<course id="CC155" school="C">COMPUTING SOFTWARE DEVELOPMENT BSC FT/SW PROGRAMME</course>
+<course id="CC157" school="C">INFORMATION SYSTEMS BSC FT/SW PROGRAMME</course>
+<course id="CC160" school="C">COMPUTING INTERNET SYSTEMS DEVELOPMENT BSC FT/SW PROGRAMME</course>
+<course id="CC161" school="C">COMPUTING FOUNDATION DEGREE PROGRAMME</course>
+<course id="CC163" school="C">INFORMATION SYSTEMS FOUNDATION DEGREE PROGRAMME</course>
+<course id="CC167" school="C">DIGITAL MEDIA COMPUTER GAMES TECHNOLOGY FOUNDATION DEGREE PROGRAMME</course>
+<course id="CC172" school="C">DIGITAL MEDIA COMPUTER GAMES DESIGN BA FT/SW PROGRAMME</course>
+<course id="CC200" school="C">COMPUTING HNC/HND PT PROGRAMME</course>
+<course id="CC203" school="C">HNC/HND BUSINESS COMPUTING &amp; INFORMATION SYSTEMS PATHWAYS</course>
+<course id="CC205" school="C">DIGITAL MEDIA HNC/HND PT PROGRAMME</course>
+<course id="CC210" school="C">COMPUTING BSC PT PROGRAMME</course>
+<course id="CC215" school="C">INFORMATION SYSTEMS PT TOP UP DEGREE PROGRAMME</course>
+<course id="CC230" school="C">UNIVERSITY CERTIFICATE IN COMPUTING</course>
+<course id="CC240" school="C">COMPUTING PROFESSIONAL STUDIES BSC PROGRAMME</course>
+<course id="CC300" school="C">COMPUTING MSC FT PROGRAMME</course>
+<course id="CC310" school="C">INFORMATION SYSTEMS MSC FT PROGRAMMES</course>
+<course id="CC400" school="C">COMPUTING MSC PT PROGRAMME</course>
+<course id="CC420" school="C">INFORMATION SYSTEMS MSC/MA PROGRAMMES</course>
+<course id="CC620" school="C">COMPUTING WOMEN INTO TECHNOLOGY &amp; SCIENCE PROGRAMME</course>
+<course id="CX290" school="C">ASSOCIATE STUDENT</course>
+<course id="CX390" school="C">RESEARCH WRITING UP PERIOD</course>
+<course id="CX500" school="C">RESEARCH COMPUTING FT</course>
+<course id="CX510" school="C">RESEARCH MATHS FT</course>
+<course id="CX700" school="C">EUROPEAN EXCHANGE STUDENTS</course>
+<course id="CX910" school="C">BSC COMPUTING (SOFTWARE DEVELOPMENT) (KIIT)</course>
+<course id="CY100" school="C">FOUNDATION DEGREE IN MULTIMEDIA</course>
+<course id="CY160" school="C">BA (HONS) DIGITAL FILM &amp; VISUAL EFFECTS PRODUCTION</course>
+<course id="CZ120" school="C">FOUNDATION DEGREES INFORMATION TECHNOLOGY</course>
+<course id="CZ130" school="C">BSC (HONS) BUSINESS COMPUTING (MULTIMEDIA)</course>
+<course id="CZ140" school="C">BSC(HONS) ICT</course>
+<course id="CZ200" school="C">HNC COMPUTING</course>
+<course id="CZ220" school="C">BSC (HONS) COMPUTING (MULTIMEDIA)</course>
+</courses>
+</course_index>
